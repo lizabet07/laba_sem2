@@ -41,6 +41,7 @@ class BankAccount:
 - `_account_number` — номер счета
 - `_status` — статус счета
 - `_opening_date` — дата открытия
+  
 **Свойства @property:**
 - Чтение: `account_number` - номер счета
 - Чтение: `balance` - баланс счета
