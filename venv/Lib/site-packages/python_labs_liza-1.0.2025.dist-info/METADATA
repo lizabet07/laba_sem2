@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: python_labs_Liza
+Version: 1.0.2025
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=5.0.0; extra == "dev"
+Requires-Dist: black>=24.0.0; extra == "dev"
