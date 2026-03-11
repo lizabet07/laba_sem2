@@ -1,7 +1,4 @@
 ![](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ВАШ_ЛОГИН/ВАШ_РЕПОЗИТОРИЙ/main/assets/atm_animation.gif" alt="Анимация банкомата" width="400">
-</p>
 # Лабораторная работа №1: Банковская система 4 вариант
 ## Цель работы
 
