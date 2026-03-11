@@ -1,7 +1,10 @@
 ![](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 # Лабораторная работа №1: Банковская система 4 вариант
 
-<img src="https://media.tenor.com/https://tenor.com/dCSFVa3Or37.gif/dCSFVa3Or37.gif" alt="Банкомат выдаёт деньги" width="500">
+<div align="center">
+  <img src="https://media.tenor.com/KFaDnnCnC0EAAAAi/pengu-pudgy.gif" alt="Пингвин у банкомата" width="400">
+</div>
+
 
 
 ## Цель работы
