@@ -1,5 +1,21 @@
 ![](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+<pre id=“atm”>
+[ БАНКНОТЫ ВЫДАЮТСЯ… ]
+</pre>
 
+<script>
+const messages = [
+“[ 💵 💵 💵 ]”,
+“[ 💵 💵 💵 ]”,
+“[ 💵 💵 💵 ]”,
+“[ 💵 💵 💵 ]”
+];
+let i = 0;
+setInterval(() => {
+document.getElementById(‘atm’).textContent = messages[i];
+i = (i + 1) % messages.length;
+}, 500);
+</script>
 # Лабораторная работа №1: Банковская система 4 вариант
 ## Цель работы
 
