@@ -60,6 +60,7 @@ class BankAccount:
 - `transfer_to(other_account, amount)` - перевод на другой счет
 
 **Сценарий 1: Создание счетов**
+
 ![Картинка 1](./src/images/lab01/image01.png)
 • Создание счета с параметрами по умолчанию
 
