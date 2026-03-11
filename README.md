@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
-# Лабораторная работа №1: Банковская система 4 вариант
+# Лабораторная работа №1: Банковская система 4 вариант 💰💳
 
 <div align="center">
   <img src="https://media.tenor.com/KFaDnnCnC0EAAAAi/pengu-pudgy.gif" alt="Пингвин у банкомата" width="400">
