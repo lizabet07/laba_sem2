@@ -180,5 +180,5 @@ __lt__ (сравнение по балансу):
 Этот метод позволяет сортировать счета по балансу
 
 *Показать, что наши объекты можно выводить, сравнивать и сортировать как встроенные типы Python.*
-<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExOXRjc3pwZzJvdmdtbWs2b2ppZWplYmhrcnB2eGc1aXczbnVhaXE3aCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ADgfsbHcS62Jy/giphy.gif" alt="Банкомат выдаёт деньги" width="500">
+
 
