@@ -1,5 +1,9 @@
 ![](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 # Лабораторная работа №1: Банковская система 4 вариант
+
+<img src="https://media.tenor.com/https://tenor.com/dCSFVa3Or37.gif/dCSFVa3Or37.gif" alt="Банкомат выдаёт деньги" width="500">
+
+
 ## Цель работы
 
 - Освоить объявление пользовательских классов
