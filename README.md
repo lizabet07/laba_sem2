@@ -1,4 +1,5 @@
 # Лабораторная работа №1: Банковская система 4 вариант 💰💳
+<p align="center"> Hello PythonBank</p>
 
 <div align="center">
   <img src="https://media.tenor.com/KFaDnnCnC0EAAAAi/pengu-pudgy.gif" alt="Пингвин у банкомата" width="400">
