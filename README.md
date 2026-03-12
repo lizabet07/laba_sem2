@@ -1,4 +1,3 @@
-![](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
 # Лабораторная работа №1: Банковская система 4 вариант 💰💳
 
 <div align="center">
