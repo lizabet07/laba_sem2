@@ -272,69 +272,6 @@ def demo_magic_methods():
     print(f"  Богатый (1000000) < Бедный (1000): {acc4 < acc5}")
     print(f"  Бедный (1000) < Богатый (1000000): {acc5 < acc4}")
 
-def demo_class_attributes():
-    """Демонстрация атрибутов класса"""
-    print_header("8. ДЕМОНСТРАЦИЯ АТРИБУТОВ КЛАССА")
-    
-    print(f"Название банка (через класс): {BankAccount.bank_name}")
-    
-    print_subheader("Создание счетов и отслеживание счетчика")
-    a1 = BankAccount("Клиент 1")
-    print(f"  Номер первого счета: {a1.account_number}")
-    a2 = BankAccount("Клиент 2")
-    print(f"  Номер второго счета: {a2.account_number}")
-    a3 = BankAccount("Клиент 3")
-    print(f"  Номер третьего счета: {a3.account_number}")
-    
-    print_subheader("Доступ к атрибутам класса через экземпляры")
-    print(f"  a1.bank_name: {a1.bank_name}")
-    print(f"  a2.bank_name: {a2.bank_name}")
-    
-    print_subheader("Изменение атрибута класса")
-    print(f"  Старое название: {BankAccount.bank_name}")
-    BankAccount.bank_name = "Супер Банк"
-    print(f"  Новое название (через класс): {BankAccount.bank_name}")
-    print(f"  Новое название (через экземпляр a1): {a1.bank_name}")
-
-def demo_validate_module():
-    """Демонстрация работы модуля validate"""
-    print_header("ДЕМОНСТРАЦИЯ МОДУЛЯ ВАЛИДАЦИИ")
-    
-    print_subheader("Проверка функций валидации")
-    
-    print("\n1. validate_name():")
-    test_names = [
-        ("Иван Петров", "корректное имя"),
-        ("Анна", "слишком короткое"),
-        ("Иван123", "с цифрами"),
-        ("", "пустое"),
-        ("   ", "только пробелы")
-    ]
-    for name, desc in test_names:
-        valid, msg = validate.validate_name(name)
-        print(f"  {desc:20} '{name}': {'✓' if valid else '✗'} {msg if not valid else ''}")
-    
-    print("\n2. validate_balance():")
-    test_balances = [
-        (1000, "корректный"),
-        (-500, "отрицательный"),
-        (15000000, "слишком большой"),
-        ("1000", "не число")
-    ]
-    for bal, desc in test_balances:
-        valid, msg = validate.validate_balance(bal)
-        print(f"  {desc:15} {bal}: {'✓' if valid else '✗'} {msg if not valid else ''}")
-    
-    print("\n3. validate_interest_rate():")
-    test_rates = [
-        (0.05, "корректная"),
-        (-0.1, "отрицательная"),
-        (1.5, "больше 1"),
-        ("0.1", "не число")
-    ]
-    for rate, desc in test_rates:
-        valid, msg = validate.validate_interest_rate(rate)
-        print(f"  {desc:12} {rate}: {'✓' if valid else '✗'} {msg if not valid else ''}")
 
 def main():
     """Главная функция"""
@@ -362,16 +299,6 @@ def main():
     input("\nНажмите Enter для продолжения...")
     
     demo_magic_methods()
-    input("\nНажмите Enter для продолжения...")
     
-    demo_class_attributes()
-    input("\nНажмите Enter для продолжения...")
-    
-    demo_validate_module()
-    
-    print("\n" + "=" * 70)
-    print(" ДЕМОНСТРАЦИЯ ЗАВЕРШЕНА")
-    print("=" * 70)
-
 if __name__ == "__main__":
     main()
