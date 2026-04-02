@@ -49,25 +49,23 @@
 
 **Что демонстрирует:** Добавление счетов в коллекцию, защиту от дубликатов, перебор элементов через `for`, удаление счета.
 
-!(./src/laba/laba02/images/image01.png)
 ![alt text](images/image01.png)
 
 ### Сценарий 2: Поиск и фильтрация (find_by_, get_)
 
 **Что демонстрирует:** Поиск счетов по имени владельца, по диапазону балансов, фильтрацию активных и заблокированных счетов.
 
-!(src/laba/laba02/images/image02.png)
+![alt text](images/image02.png)
 
 ### Сценарий 3: Индексация и сортировка (getitem, sort)
 
 **Что демонстрирует:** Доступ к элементам по индексу collection[0], использование срезов, удаление по индексу remove_at(), универсальную сортировку sort(key=...).
 
-!(src/laba/laba02/images/image03.png)
+![alt text](images/image03.png)
 
 ### Сценарий 4: Цепочки операций
 
 **Что демонстрирует:** Что методы get_active(), get_high_balance() возвращают новые коллекции, с которыми можно продолжать работать (цепочки вызовов).
 
-!(src/laba/laba02/images/image04.png)
-!(src/laba/laba02/images/image05.png)
-![alt text](image.png)
+![alt text](images/image04.png)
+![alt text](images/image05.png)
