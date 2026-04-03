@@ -45,8 +45,8 @@ def scenario_1_basic_operations():
         print(f"   ✓ Ошибка (корректно): {e}")
 
     # 4. Удаление
-    print(f"\n4. Удаление счёта {acc2.owner_name}:")
-    collection.remove(acc2)
+    print(f"\n4. Удаление счёта {acc1.owner_name}:")
+    collection.remove(acc1)
     print(f"   Осталось счетов: {len(collection)}")
 
     # 5. Повторный вывод после удаления
@@ -243,7 +243,6 @@ def main():
 
     # Сценарий 4: Цепочки операций
     scenario_4_chaining_operations()
-
 
 
 if __name__ == "__main__":

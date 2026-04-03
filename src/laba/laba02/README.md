@@ -1,13 +1,5 @@
 # Лабораторная работа №2: Коллекция объектов (Python)
 
-**<p align="center"> Банковские счета - BankAccountCollection </p>**
-
-<div align="center">
-  <img src="https://media.tenor.com/KFaDnnCnC0EAAAAi/pengu-pudgy.gif" alt="Пингвин" width="400">
-</div>
-
-
-
 ## Выбранная предметная область
 
 **Банковские счета**
@@ -97,7 +89,7 @@
 - проверка типа при добавлении
 - защита от дубликатов
 
-![alt text](images/image01.png)
+![alt text](images/image.png)
 
 
 ---
