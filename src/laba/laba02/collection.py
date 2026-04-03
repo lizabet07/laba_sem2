@@ -11,16 +11,15 @@ class BankAccountCollection:
         """Конструктор коллекции"""
         self._items = items if items is not None else []
 
-
     def add(self, item):
         """Добавить банковский счёт в коллекцию"""
         if not isinstance(item, BankAccount):
             raise TypeError("Можно добавлять только объекты типа BankAccount")
-
-        # Проверка на дубликат по номеру счёта
-        if any(acc.account_number == item.account_number for acc in self._items):
-            raise ValueError(f"Счёт с номером {item.account_number} уже существует в коллекции")
-
+        
+        # ПРОВЕРКА ДУБЛИКАТОВ ПО ИМЕНИ ВЛАДЕЛЬЦА
+        if any(acc.owner_name == item.owner_name for acc in self._items):
+            raise ValueError(f"Счёт для владельца '{item.owner_name}' уже существует в коллекции")
+        
         self._items.append(item)
 
     def remove(self, item):
@@ -34,8 +33,7 @@ class BankAccountCollection:
         """Удалить счёт по индексу"""
         if 0 <= index < len(self._items):
             return self._items.pop(index)
-        else:
-            raise IndexError("Индекс выходит за границы коллекции")
+        raise IndexError("Индекс выходит за границы коллекции")
 
     def get_all(self):
         """Вернуть список всех счетов"""
@@ -68,7 +66,6 @@ class BankAccountCollection:
         """Получить счета с балансом выше порога"""
         return BankAccountCollection([acc for acc in self._items if acc.balance > threshold])
 
-
     def sort_by_balance(self, reverse=False):
         """Сортировка по балансу"""
         self._items.sort(key=lambda acc: acc.balance, reverse=reverse)
@@ -76,10 +73,10 @@ class BankAccountCollection:
     def sort_by_owner_name(self, reverse=False):
         """Сортировка по имени владельца"""
         self._items.sort(key=lambda acc: acc.owner_name, reverse=reverse)
+    
     def sort(self, key, reverse=False):
         """Универсальная сортировка по ключу"""
         self._items.sort(key=key, reverse=reverse)
-
 
     def __len__(self):
         """Возвращает количество счетов в коллекции"""
@@ -88,7 +85,6 @@ class BankAccountCollection:
     def __getitem__(self, index):
         """Доступ к счёту по индексу"""
         if isinstance(index, slice):
-            # Если передан срез, возвращаем новую коллекцию
             return BankAccountCollection(self._items[index])
         return self._items[index]
 
