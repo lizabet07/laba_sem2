@@ -1,5 +1,5 @@
 """
-Базовый класс BankAccount и коллекция для ЛР-3
+Базовый класс BankAccount и коллекция для ЛР - 3
 """
 
 from datetime import datetime
@@ -240,7 +240,7 @@ def validate_status_for_operation(status, operation):
 
 
 def validate_withdrawal(balance, amount):
-    """Проверка возможности снятия средств"""
+    """Проверка возможности снятия средств со счета"""
     if amount > balance:
         return False, f"Недостаточно средств. Доступно: {balance:.2f}"
     return True, "OK"
