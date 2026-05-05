@@ -6,7 +6,7 @@ import sys
 import os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..'))
 
-from base import BankAccount, AccountCollection
+from laba.laba03.base import BankAccount, AccountCollection
 from model import SavingsAccount, CreditAccount, PremiumAccount
 
 

@@ -1,6 +1,6 @@
 """Производные классы счетов для ЛР - 3"""
 
-from base import BankAccount
+from laba.laba03.base import BankAccount
 import sys
 import os
 
