@@ -1,8 +1,11 @@
 """
 Модуль стратегий для ЛР-5
 """
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 30c74f39ddcd45c4aed26b219130f88fc31879fa
 # ========== ФУНКЦИИ ДЛЯ СОРТИРОВКИ (используются как key в sort/sorted) ==========
 
 def by_balance(account):
@@ -136,4 +139,8 @@ class ConservativeInterestStrategy:
         # Не начисляем если счёт не активен ИЛИ баланс больше 500 000
         if account.status != "активен" or account.balance > 500000:
             return 0.0
+<<<<<<< HEAD
         return account.balance * account.rate * 0.7  # Только 70% от ставки
+=======
+        return account.balance * account.rate * 0.7  # Только 70% от ставки
+>>>>>>> 30c74f39ddcd45c4aed26b219130f88fc31879fa
