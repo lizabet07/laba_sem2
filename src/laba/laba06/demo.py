@@ -143,7 +143,7 @@ def scenario_7():
 # ========== ГЛАВНАЯ ==========
 def main():
     print("\n" + "="*60)
-    print("   ЛАБОРАТОРНАЯ РАБОТА №6 - ОЦЕНКА 5")
+    print("ЛАБОРАТОРНАЯ РАБОТА №6")
     print("   GENERICS, TYPING, ПРОТОКОЛЫ")
     print("="*60)
     
@@ -154,7 +154,6 @@ def main():
     scenario_5()
     scenario_6()
     scenario_7()
-
 
 if __name__ == "__main__":
     main()
