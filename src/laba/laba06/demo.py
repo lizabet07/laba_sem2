@@ -103,43 +103,6 @@ def scenario_5():
     print("  ✓ Все счета имеют метод score()")
 
 
-# ========== СЦЕНАРИЙ 6: РАЗНЫЕ ОГРАНИЧЕНИЯ ==========
-def scenario_6():
-    print_section("СЦЕНАРИЙ 6: ОДИН КЛАСС - РАЗНЫЕ ОГРАНИЧЕНИЯ")
-    
-    # Один и тот же класс с разными TypeVar
-    d_coll: TypedCollection[D] = TypedCollection()  # только Displayable
-    s_coll: TypedCollection[S] = TypedCollection()  # только Scorable
-    any_coll: TypedCollection = TypedCollection()    # любые типы
-    
-    d_coll.add(BankAccount("A", 1000))
-    s_coll.add(BankAccount("B", 2000))
-    any_coll.add("строка").add(123).add(BankAccount("C", 3000))
-    
-    print(f"  Displayable коллекция: {len(d_coll)} элементов")
-    print(f"  Scorable коллекция: {len(s_coll)} элементов")
-    print(f"  Любая коллекция: {len(any_coll)} элементов (разных типов)")
-    print("  ✓ TypedCollection работает с любыми ограничениями")
-
-
-# ========== СЦЕНАРИЙ 7: ЦЕПОЧКИ ВЫЗОВОВ ==========
-def scenario_7():
-    print_section("СЦЕНАРИЙ 7: ЦЕПОЧКИ ВЫЗОВОВ")
-    
-    coll = TypedCollection[BankAccount]()
-    for acc in create_accounts(): coll.add(acc)
-    
-    # Цепочка: filter_by -> sort_by -> map
-    result = (coll
-              .filter_by(lambda a: a.status == "активен")
-              .sort_by(lambda a: a.balance, reverse=True)
-              .map(lambda a: f"{a.owner}: {a.balance:.0f}₽"))
-    
-    for item in result[:3]:
-        print(f"  {item}")
-    print("  ✓ filter_by() возвращает TypedCollection для продолжения цепочки")
-
-
 # ========== ГЛАВНАЯ ==========
 def main():
     print("\n" + "="*60)
@@ -152,8 +115,6 @@ def main():
     scenario_3()
     scenario_4()
     scenario_5()
-    scenario_6()
-    scenario_7()
 
 if __name__ == "__main__":
     main()
