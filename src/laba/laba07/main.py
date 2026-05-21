@@ -340,7 +340,7 @@ def main():
             print("Типы: 1-Обычный, 2-Накопительный, 3-Кредитный, 4-Премиум")
             acc_type = input("Выберите тип (1-4): ").strip()
             if acc_type not in ["1","2","3","4"]:
-                print("❌ Неверный тип")
+                print(" Неверный тип")
                 continue
             owner = input("Имя владельца: ")
             balance = get_float("Начальный баланс: ", 0)
@@ -350,7 +350,7 @@ def main():
                 print(f"\n✓ Счёт для {owner} создан!")
                 print_account(acc)
             except DuplicateAccountError as e:
-                print(f"\n❌ {e}")
+                print(f"\n {e}")
         
         elif choice == "2":
             print_table(app.get_all_accounts(), "ВСЕ СЧЕТА")
@@ -362,14 +362,14 @@ def main():
             if acc:
                 print_account(acc)
             else:
-                print(f"\n❌ Счёт для {owner} не найден")
+                print(f"\n Счёт для {owner} не найден")
         
         elif choice == "4":
             print("\n--- УДАЛЕНИЕ СЧЁТА ---")
             owner = input("Имя владельца: ")
             acc = app.find_account(owner)
             if not acc:
-                print(f"\n❌ Счёт не найден")
+                print(f"\n Счёт не найден")
                 continue
             print_account(acc)
             if confirm(f"\nУдалить счёт {owner}?"):
@@ -385,7 +385,7 @@ def main():
                 print(f"\n✓ Счёт {owner} пополнен на {amount:.2f}₽")
                 print_account(acc)
             except AccountNotFoundError as e:
-                print(f"\n❌ {e}")
+                print(f"\n {e}")
         
         elif choice == "6":
             print("\n--- СНЯТИЕ СО СЧЁТА ---")
@@ -396,7 +396,7 @@ def main():
                 print(f"\n✓ Со счёта {owner} снято {amount:.2f}₽")
                 print_account(acc)
             except (AccountNotFoundError, ValueError) as e:
-                print(f"\n❌ {e}")
+                print(f"\n {e}")
         
         elif choice == "7":
             print("\n--- БЛОКИРОВКА СЧЁТА ---")
@@ -406,7 +406,7 @@ def main():
                 print(f"\n✓ Счёт {owner} заблокирован")
                 print_account(acc)
             except AccountNotFoundError as e:
-                print(f"\n❌ {e}")
+                print(f"\n {e}")
         
         elif choice == "8":
             print("\n--- СОРТИРОВКА ПО БАЛАНСУ ---")
@@ -416,7 +416,7 @@ def main():
             print_table(sorted_accs, "ОТСОРТИРОВАННЫЕ СЧЕТА")
         
         else:
-            print("\n❌ Неверный пункт!")
+            print("\n Неверный пункт!")
 
 if __name__ == "__main__":
     main()
