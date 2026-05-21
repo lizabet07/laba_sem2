@@ -2,7 +2,7 @@
 Модуль с классом BankAccountCollection для лабораторной работы №2
 """
 
-from model import BankAccount
+from ..laba03.base import BankAccount
 
 class BankAccountCollection:
     """Контейнер для хранения банковских счетов"""
