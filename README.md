@@ -6,3 +6,4 @@
 ## Лабораторная работа 4 — https://github.com/lizabet07/laba_sem2/tree/main/src/laba/laba04
 ## Лабораторная работа 5 - https://github.com/lizabet07/laba_sem2/tree/main/src/laba/laba05
 ## Лабораторная работа 6 — https://github.com/lizabet07/laba_sem2/tree/main/src/laba/laba06
+## Лабораторная работа 7 — https://github.com/lizabet07/laba_sem2/tree/main/src/laba/laba07
