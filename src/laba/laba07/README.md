@@ -3,7 +3,7 @@
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 https://asciinema.org/a/WwngCFexWXzUvsXz
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
-
+[![asciinema](https://asciinema.org/a/WwngCFexWXzUvsXz.svg)](https://asciinema.org/a/WwngCFexWXzUvsXz)
 ## 1. Цель работы
 
 Объединить все знания, полученные в ЛР1–ЛР6, в единое работающее приложение. Реализовать интерактивный CLI-интерфейс с меню и вводом пользователя.
