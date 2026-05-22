@@ -1,4 +1,4 @@
-# Лабораторная работа №7 — Консольное приложение
+# Лабораторная работа №7
 
 ⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐
 [![asciinema](https://asciinema.org/a/WwngCFexWXzUvsXz.svg)](https://asciinema.org/a/WwngCFexWXzUvsXz)
